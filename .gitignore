@@ -1,0 +1,29 @@
+# Eclipse Setting
+/.metadata
+/Servers
+.settings
+.project
+.classpath
+RemoteSystemsTempFiles
+bin
+org.eclipse.jdt.core.prefs
+
+# Maven
+target
+
+# Netbeans Ignore
+nbproject
+build
+dist
+private
+
+# Maven ignore
+target
+
+
+#Intellij
+.idea
+/.idea
+*.iml
+*.iws
+*.ipr

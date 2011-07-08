@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>Untitled Document</title>
+<script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.style1 {color: #996600}
+.style2 {color: #000000}
+.style4 {
+	color: #009900;
+	font-weight: bold;
+}
+.style8 {color: #FF0000; font-weight: bold; }
+.style10 {color: #FF6600; font-weight: bold; }
+-->
+</style>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="1" cellpadding="1">
+  <tr>
+    <td colspan="3"><a href="?pg=reports">ATM uptime</a> | <span class="style1">Node uptime</span> | <span class="style1"><u><a href="?pg=idle">Idle ATMs</a></u></span> | <u><span class="style1"><a href="?pg=capCard">Captured cards</a></span></u> | <u><span class="style1"><a href="?pg=repFraud">Fraud check</a></span></u> | <u><span class="style1"><a href="?pg=repCard">Card numbers</a></span></u> | <a href="?pg=repResponese">Response codes</a> | <a href="?pg=repTransaksi">Trx differences</a> | <a href="?pg=repMachines">Machines down </a></td>
+  </tr>
+  <tr>
+    <td width="137">&nbsp;</td>
+    <td width="472">&nbsp;</td>
+    <td width="490">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Node uptime report  </strong></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="18" colspan="3"><hr /></td>
+  </tr>
+  <tr>
+    <td>Location: Indonesia </td>
+    <td><input name="radiobutton" type="radio" value="radiobutton" />
+      Time frame: the last
+      <select name="menu1" onchange="MM_jumpMenu('parent',this,0)">
+        <option selected="selected">1</option>
+      </select>
+      <select name="menu1" onchange="MM_jumpMenu('parent',this,0)">
+        <option selected="selected">day(s)</option>
+    </select></td>
+    <td rowspan="2"><input type="submit" name="Submit" value="Go" />    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><label>
+      <input name="radiobutton" type="radio" value="radiobutton" />
+      Time frame starting at</label>
+        <select name="menu2" onchange="MM_jumpMenu('parent',this,0)">
+          <option>4/28/2011</option>
+        </select>
+      for
+      <input name="textfield2" type="text" value="1" size="5" />
+      day(s) </td>
+  </tr>
+  <tr>
+    <td colspan="3"><hr></td>
+  </tr>
+</table>
+<table width="100%" cellspacing="1" cellpadding="1">
+  <tr>
+    <td bgcolor="#996666"><span class="style2">Summary for items between Apr 28, 2011, 23:59:59 | Tip: Click once to nail down the highlight. Click again to release. </span></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="100%" cellspacing="1" cellpadding="1">
+  <tr>
+    <td height="23" colspan="2"><strong>Node ID </strong></td>
+    <td colspan="3"><span class="style4">Processing</span></td>
+    <td colspan="3"><span class="style8">Offline</span></td>
+    <td colspan="3"><span class="style10">Recovering</span></td>
+    <td colspan="3"><span class="style10">Forwarding</span></td>
+    <td colspan="2"><span class="style8">Error</span></td>
+  </tr>
+  <tr>
+    <td width="17%"><a href="#">BTPN:Node SH1 to SW1 </a></td>
+    <td width="2%">1</td>
+    <td width="8%">000:23:59:59</td>
+    <td width="5%">100%</td>
+    <td width="6%">0</td>
+    <td width="8%">000:00:00:00</td>
+    <td width="2%">0%</td>
+    <td width="4%">0</td>
+    <td width="8%">000:00:00:00</td>
+    <td width="4%">0%</td>
+    <td width="6%">0</td>
+    <td width="9%">000:00:00:00</td>
+    <td width="4%">0%</td>
+    <td width="6%">0</td>
+    <td width="8%">000:00:00:00</td>
+    <td width="3%">0%</td>
+  </tr>
+  <tr>
+    <td><a href="#">BTPN:Node to ATM Bersama </a></td>
+    <td>1</td>
+    <td>000:23:59:59</td>
+    <td>100%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+  </tr>
+  <tr>
+    <td><a href="#">H2H Interface with ATM Bersama </a></td>
+    <td>1</td>
+    <td>000:23:59:59</td>
+    <td>100%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+  </tr>
+  <tr>
+    <td><a href="#">H2H Interface with Switch </a></td>
+    <td>3</td>
+    <td>000:23:59:59</td>
+    <td>99.81%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+    <td>4</td>
+    <td>000:00:01:52</td>
+    <td>0.13%</td>
+    <td>2</td>
+    <td>000:00:00:48</td>
+    <td>0.06%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+  </tr>
+  <tr>
+    <td><a href="#">MasterCard Interface </a></td>
+    <td>1</td>
+    <td>000:23:59:59</td>
+    <td>100%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+    <td>0</td>
+    <td>000:00:00:00</td>
+    <td>0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#996666"><a href="#">Average</a></td>
+    <td bgcolor="#996666">1</td>
+    <td bgcolor="#996666">000:23:59:59</td>
+    <td bgcolor="#996666">99.98%</td>
+    <td bgcolor="#996666">0</td>
+    <td bgcolor="#996666">000:00:00:00</td>
+    <td bgcolor="#996666">0%</td>
+    <td bgcolor="#996666">0</td>
+    <td bgcolor="#996666">000:00:00:14</td>
+    <td bgcolor="#996666">0.02%</td>
+    <td bgcolor="#996666">0</td>
+    <td bgcolor="#996666">000:00:00:06</td>
+    <td bgcolor="#996666">0.01%</td>
+    <td bgcolor="#996666">0</td>
+    <td bgcolor="#996666">000:00:00:00</td>
+    <td bgcolor="#996666">0%</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="100%" cellspacing="1" cellpadding="1">
+  
+  <tr>
+    <td>8 items on list </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>(Processed 16 record in 1 seconds.)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="1" cellpadding="1">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><hr></td>
+  </tr>
+</table>
+</body>
+</html>

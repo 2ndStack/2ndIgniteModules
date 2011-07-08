@@ -1,0 +1,259 @@
+* { 
+padding : 0;
+margin : 0;
+} 
+body { 
+font-family : Arial, Helvetica, sans-serif;
+font-size : 13px;
+background : #EEF2F7;
+} 
+#wrapper { 
+margin : 0 auto;
+width : 1024px;
+} 
+#header { 
+color : #333;
+width : 854px;
+float : right;
+padding : 0;
+border-bottom : 5px solid #4C77B6;
+height : 71px;
+margin : 5px 0 0 10px;
+} 
+.logo { 
+margin-top : 0px;
+text-align : center;
+width : 854px;
+} 
+.logo h1#lineone { 
+font-size : 1.7em;
+font-weight : lighter;
+font-family : helvetica, arial, sans-serif;
+padding-top : 40px;
+padding-left : 435px;
+color : #000;
+border : none;
+letter-spacing : -1px;
+} 
+.logo h1#lineone span { 
+color : #7e7e7e;
+} 
+.logo h2#linetwo { 
+padding-left : 5px;
+font-size : 0.9em;
+font-family : helvetica, arial, sans-serif;
+text-transform : none;
+color : #5d991d;
+} 
+.logo a { 
+color : #5d991d;
+text-decoration : underline;
+} 
+.adtop { 
+height : 90px;
+width : 728px;
+background-image : url(images/adbg.jpg);
+background-repeat : no-repeat;
+margin : 10px 0 0 0;
+} 
+.adtop h2 { 
+float : right;
+color : #ffffff;
+font-weight : lighter;
+margin : 65px 10px 0 0;
+} 
+#navigation { 
+float : right;
+width : 708px;
+color : #333;
+padding : 10px;
+line-height : 25px;
+font-size : 1em;
+text-align : center;
+margin : 0 auto;
+background-color : #99cc33;
+} 
+#navigation ul { 
+margin : 0 0.5em 0 0.5em;
+padding : 0;
+display : inline;
+list-style-type : none;
+text-align : center;
+} 
+#navigation ul li { 
+display : inline;
+position : relative;
+} 
+#navigation a { 
+color : #ffffff;
+text-decoration : none;
+padding : 14px 15px 14px 15px;
+font-weight : bolder;
+} 
+#navigation a.now { 
+color : #606695;
+text-decoration : none;
+} 
+#navigation a:hover { 
+color : #ffe750;
+text-decoration : none;
+} 
+#navigation a:visited { 
+color : #ffffff;
+text-decoration : none;
+} 
+#leftcolumn { 
+color : #333;
+*border : 1px solid #ccc;
+margin : 5px 0 0 0;
+padding : 81px 0 5px 0;
+min-height : 350px;
+width : 160px;
+float : left;
+background-image : url(images/euronet_logo.gif);
+background-repeat : no-repeat;
+*background-color : #BCD0ED;
+} 
+.leftnav { 
+float : left;
+margin-left : 0;
+margin-top : 5px;
+margin-bottom : 10px;
+width : 160px;
+background-color : #BCD0ED;
+text-align : right;
+*border-top : 1px solid #1ba133;
+} 
+.leftnav ul { 
+margin : 0;
+padding : ;
+list-style : none;
+} 
+.leftnav li { 
+border-bottom : 3px solid #FFF;
+list-style : none;
+*text-transform : lowercase;
+} 
+.leftnav li a { 
+color : #000;
+display : block;
+padding : 0.7em 0.7em 0.7em 1em;
+text-decoration : none;
+font-family : arial;
+font-size : 0.9em;
+font-weight : bold;
+font-weight : lighter;
+} 
+.leftnav li a:hover { 
+color : #00D;
+} 
+#leftcolumn h3 { 
+color : #86c215;
+font-size : 1em;
+padding-left : 0.7em;
+margin-top: 14px;
+} 
+#leftcolumn h4 { 
+color : #86c215;
+font-size : 1em;
+padding-left : 0.7em;
+}
+
+.ads {
+display : block;
+padding : 0.7em 0.7em 0.7em 1em;
+text-decoration : none;
+font-family : arial;
+font-size : 0.9em;
+font-weight : bold;
+color : #EEF2F7;
+background-color : #4C77B6;
+}
+.ads ul { 
+margin-left : 0.9em;
+margin-top : 0.5em;
+margin-bottom : 0.7em;
+list-style : none;
+} 
+.ads li { 
+padding-bottom : 0.3em;
+} 
+.news h2 { 
+color : #86c217;
+font-size : 1.5em;
+text-align : center;
+padding-bottom : 0.5em;
+font-weight : lighter;
+} 
+.news p { 
+font-family : verdana;
+font-size : 0.75em;
+padding-left : 15px;
+padding-bottom : 5px;
+margin-left : 10px;
+margin-right : 10px;
+text-align : justify;
+padding-right : 20px;
+background-color : #eff6ff;
+} 
+.news a { 
+margin-right : 25px;
+margin-bottom : 2px;
+color : #48b033;
+font-size : 0.8em;
+font-weight : bold;
+padding : 2px;
+float : right;
+} 
+#rightcolumn { 
+float : left;
+color : #333;
+border : 1px solid #ccc;
+background : #FFFFFF;
+margin : 5px 0 0 10px;
+min-height : 530px;
+width : 832px;
+display : inline;
+padding : 10px 10px 10px 10px;
+} 
+.inset { 
+float : left;
+width : 250px;
+height : 250px;
+padding : 5px;
+border : 1px solid #0066ff;
+background : #ddffc5;
+margin : 0 15px 0 10px;
+} 
+.righttext { 
+margin-top : 20px;
+text-align : justify;
+} 
+.righttext h3 { 
+padding : 20px 0 10px 10px;
+color : #a1d308;
+font-size : 1.5em;
+} 
+.righttext p { 
+padding : 0 10px 0 10px;
+font-size : 1.15em;
+color : #828282;
+} 
+#footer { 
+text-align : center;
+margin-top : 3px;
+display : inline;
+float : left;
+width : 922px;
+padding-top : 5px;
+padding-bottom : 5px;
+color : #aaa9a9;
+margin-top : 5px;
+border-top : 1px solid #ccc;
+} 
+#footer p { 
+font-size : 75%;
+} 
+#footer a { 
+color : #8abd58;
+} 
