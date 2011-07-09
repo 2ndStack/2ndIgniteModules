@@ -1,22 +1,14 @@
 ======================================
-Project Belajar CodeIgniter
+Project CodeIgniter
 
 Project Ini digunakan untuk mempelajari CodeIgniter.
 Ada beberapa library yang digunakan yaitu :
-Ion Auth : https://github.com/benedmunds/CodeIgniter-Ion-Auth
-Modular Extension HMVC : https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc/wiki/Home
+Ion Auth : https://github.com/benedmunds/CodeIgniter-Ion-Auth 
 CodeIgniter Template : https://github.com/philsturgeon/codeigniter-template
-CodeIgniter Dwoo : https://github.com/philsturgeon/codeigniter-dwoo
 ======================================
-
-INSTALLATION:
-Project ini hanya berisi file-file yang ada didalam sub-direktori application.
-Untuk instalasi cukup extract fresh install CodeIgniter v 2.0.2 atau yang lebih baru,
-kemudian ganti semua file dalam sub-direktori application dengan file yang ada pada project ini.
 
 Struktur database dapat diambil dari schema.sql. Defaultnya untuk MySQL.
 Untuk Sementara baru MySQL yang selalu di update.
-
 
 ------------------------------
 Deny Prasetyo

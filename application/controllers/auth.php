@@ -15,7 +15,7 @@ class Auth extends Controller
         $this->load->library('ion_auth');
         $this->load->library('session');
         $this->load->library('form_validation');
-//        $this->load->database();
+        $this->load->database();
         $this->load->helper('url');
     }
 
