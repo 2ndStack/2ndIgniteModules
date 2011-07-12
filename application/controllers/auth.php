@@ -44,7 +44,7 @@ class Auth extends Controller
             $this->template->set_theme('omenk');
             $this->template->set_layout('default')
                     ->set_partial('mainnav', 'menu/mainnav')
-                    //->set_partial('secnav', 'menu/secnav', $this->data)
+            //->set_partial('secnav', 'menu/secnav', $this->data)
                     ->title('List Users', '2ndStack Studio')
                     ->build('auth/index', $this->data);
         }
@@ -92,6 +92,12 @@ class Auth extends Controller
             );
 
             $this->load->view('auth/login', $this->data);
+            $this->template->set_theme('omenk');
+            $this->template->set_layout('default')
+                    ->set_partial('mainnav', 'menu/mainnav')
+            //->set_partial('secnav', 'menu/secnav', $this->data)
+                    ->title('List Users', '2ndStack Studio')
+                    ->build('auth/login', $this->data);
         }
     }
 
@@ -354,6 +360,12 @@ class Auth extends Controller
                                                     'value' => $this->form_validation->set_value('password_confirm'),
             );
             $this->load->view('auth/create_user', $this->data);
+            $this->template->set_theme('omenk');
+            $this->template->set_layout('default')
+                    ->set_partial('mainnav', 'menu/mainnav')
+            //->set_partial('secnav', 'menu/secnav', $this->data)
+                    ->title('List Users', '2ndStack Studio')
+                    ->build('auth/create_user', $this->data);
         }
     }
 
