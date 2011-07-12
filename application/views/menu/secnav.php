@@ -9,11 +9,10 @@
                 <li>
                     <form action="<?php echo site_url('auth/login');?>" method="post">
                         <label>E-mail</label>
-                        <input class="logintext" id="email" type="text" value="<?php echo set_value('email');?>"
+                        <input class="logintext" id="email" type="text" value=""
                                name="email"/>
                         <label>Password</label>
-                        <input class="logintext" id="password" type="password"
-                               value="<?php echo set_value('password');?>" name="password"/>
+                        <input class="logintext" id="password" type="password" value="" name="password"/>
                         <button type="submit" value="Log in">Log in</button>
                         <input class="logincheck" type="checkbox" name="remember" value="1"/>
                         <label>Remember Me?</label>

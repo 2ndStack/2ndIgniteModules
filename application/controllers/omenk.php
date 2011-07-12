@@ -21,7 +21,7 @@ class Omenk extends CI_Controller
         $this->template->set_theme('omenk');
         $this->template->set_layout('default')
                 ->set_partial('mainnav', 'menu/mainnav')
-                //->set_partial('secnav', 'menu/secnav', $data)
+                ->set_partial('secnav', 'menu/secnav', $data)
                 ->set_partial('slidewrap', 'menu/slidewrap')
                 ->title('Home', 'halaman utama')
                 ->build('home/home');

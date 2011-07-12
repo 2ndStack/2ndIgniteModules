@@ -13,10 +13,12 @@ class Auth extends Controller
     {
         parent::__construct();
         $this->load->library('ion_auth');
+        $this->load->model('ion_auth_model');
         $this->load->library('session');
         $this->load->library('form_validation');
         $this->load->database();
         $this->load->helper('url');
+        $this->load->library('template');
     }
 
     //redirect if needed, otherwise display the user list
@@ -39,10 +41,15 @@ class Auth extends Controller
             //list the users
             $this->data['users'] = $this->ion_auth->get_users_array();
             $this->load->view('auth/index', $this->data);
+            $this->template->set_theme('omenk');
+            $this->template->set_layout('default')
+                    ->set_partial('mainnav', 'menu/mainnav')
+                    //->set_partial('secnav', 'menu/secnav', $this->data)
+                    ->title('List Users', '2ndStack Studio')
+                    ->build('auth/index', $this->data);
         }
     }
 
- 
 
     //log the user in
     function login()
