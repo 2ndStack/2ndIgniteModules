@@ -1,0 +1,35 @@
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	outline: none;
+	font-size: 100%;
+	background: transparent;
+	border: none;
+	text-decoration: none;
+}
+form {
+	margin: 0px;
+}
+input {
+
+}
+textarea {
+	overflow: auto;
+}
+td, th {
+	vertical-align: top;
+	text-align: left;
+}
+
+img, object {
+	border: none;
+}
+
+sup {
+	font-weight: normal;
+	vertical-align: top;
+}
+ul {
+	list-style: none;
+}

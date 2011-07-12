@@ -42,25 +42,7 @@ class Auth extends Controller
         }
     }
 
-    function login_json()
-    {
-        $remember = (bool)$this->input->post('remember');
-
-        if ($this->ion_auth->login($this->input->post('email'), $this->input->post('password'), true)) { //if the login is successful
-            //redirect them back to the home page
-            $this->session->set_flashdata('message', $this->ion_auth->messages());
-            //            redirect($this->config->item('base_url'), 'refresh');
-            $data = array('success' => true, 'msg' => 'Sakses Login');
-            $this->output
-                    ->set_content_type('application/json')
-                    ->set_output(json_encode($data));
-        } else {
-            $data = array('success' => false, 'msg' => 'Gagal Login');
-            $this->output
-                    ->set_content_type('application/json')
-                    ->set_output(json_encode($data));
-        }
-    }
+ 
 
     //log the user in
     function login()

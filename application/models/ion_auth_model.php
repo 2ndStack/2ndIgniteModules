@@ -217,12 +217,6 @@ class Ion_auth_model extends CI_Model
     }
 
 
-    /**
-     * Deactivate
-     *
-     * @return void
-     * @author Mathew
-     **/
     public function deactivate($id = 0)
     {
         if (empty($id)) {

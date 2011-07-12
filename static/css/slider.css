@@ -1,0 +1,29 @@
+.jcarousel .jcarousel-container {
+    background: #0b1114;
+}
+.jcarousel .jcarousel-direction-rtl {
+	direction: rtl;
+}
+.jcarousel .jcarousel-container-horizontal {
+    width: 956px;
+}
+.jcarousel .jcarousel-clip-horizontal {
+    width:  956px;
+    height: 310px;
+}
+.jcarousel .jcarousel-item {
+    width:  956px;
+    height: 310px;
+    background: #0b1114;
+}
+
+.jcarousel .jcarousel-item-horizontal {
+    margin: 0;
+}
+
+.jcarousel .jcarousel-direction-rtl .jcarousel-item-horizontal {
+    margin: 0;
+}
+.jcarousel .jcarousel-item-placeholder {
+    color: #000;
+}

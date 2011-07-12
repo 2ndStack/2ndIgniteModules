@@ -41,7 +41,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhosts';
+$db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'atm';
 $db['default']['password'] = 'atmatm';
 $db['default']['database'] = 'ewidt';
