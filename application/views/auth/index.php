@@ -1,4 +1,3 @@
-
 <script type="text/javascript" src="<?php echo base_url() . 'static/'?>js/jquery.dataTables.min.js"></script>
 <link rel="stylesheet" href="<?php echo base_url() . 'static/'?>css/table.css" type="text/css"/>
 <script type="text/javascript" charset="utf-8">

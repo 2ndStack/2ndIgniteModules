@@ -18,7 +18,7 @@
                         <label>Remember Me?</label>
 
                         <p>
-                            <a href="#">Register for a Sencha account &raquo;</a>
+                            <a href="#">Register for a 2ndStack account &raquo;</a>
                         </p>
                     </form>
                 </li>

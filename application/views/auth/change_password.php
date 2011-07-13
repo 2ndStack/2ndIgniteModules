@@ -13,7 +13,7 @@
                             <h2>Change Password</h2>
 
                             <div class="blockcontent">
-                                <h3>ganti password</h3>
+<!--                                <h3>ganti password</h3>-->
                                 <dl class="form-text">
                                     <dt>
                                         <label for="old">Old Password:</label>
