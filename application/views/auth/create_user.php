@@ -43,159 +43,140 @@
 <!--</div>-->
 
 
-<!--<script type="text/javascript" src="--><?php //echo base_url() . 'static/'?><!--js/jquery.dataTables.min.js"></script>-->
-<!--<link rel="stylesheet" href="--><?php //echo base_url() . 'static/'?><!--css/table.css" type="text/css"/>-->
-<!--<script type="text/javascript" charset="utf-8">-->
-<!--    $(document).ready(function() {-->
-<!--        $('#datatables').dataTable({-->
-<!--                    "sPaginationType": "full_numbers"-->
-<!--                }-->
-<!--        );-->
-<!--    });-->
-<!--</script>-->
-    <div id="wrapper">
-                    <div id="contentwrap">
-                        <div id="page-title">
-                            <h1>Create User</h1>
-                            <div class="clearfix"></div>
+<div id="contentwrap">
+    <div id="page-title">
+        <h1>2ndStack<span>Studio</span></h1>
+
+        <div class="clearfix"></div>
+    </div>
+    <div id="page-content">
+        <div class="columns">
+            <div class="column">
+                <div class="content">
+                    <form action="<?php echo site_url('auth/create_user');?>" method="post">
+                        <div class="blocksection">
+                            <h2>Create User</h2>
+
+                            <div class="blockcontent">
+                                <h3>Please enter the users information below.</h3>
+                                <dl class="form-text">
+                                    <dt>
+                                        <label for="first_name">First Name:</label>
+                                    </dt>
+                                    <dd>
+                                        <input id="first_name" type="text"
+                                               name="first_name"/>
+
+                                        <?php echo form_error('first_name', ' <div class="boxinfo error">', '</div>'); ?>
+
+                                        <!--
+                                        <div class="boxinfo">
+                                            your info text here...
+                                        </div>
+                                        <div class="boxinfo success">
+                                            Username is valid and not in use.
+                                        </div>
+                                        <div class="boxinfo error">
+                                            Please complete the required field "Username".
+                                        </div>
+                                        -->
+                                        <p class="description">Insert Your First Name.</p>
+                                    </dd>
+                                </dl>
+                                <dl class="form-text">
+                                    <dt>
+                                        <label for="last_name">Last Name:</label>
+                                    </dt>
+                                    <dd>
+                                        <input id="last_name" type="text"
+                                               value="" name="last_name"/>
+
+                                        <?php echo form_error('last_name', ' <div class="boxinfo error">', '</div>'); ?>
+                                        <p class="description">Insert Your Last Name.</p>
+                                    </dd>
+                                </dl>
+
+
+
+                                 <dl class="form-text">
+                                    <dt>
+                                        <label for="company">Company Name:</label>
+                                    </dt>
+                                    <dd>
+                                        <input id="company" type="text"
+                                               value="" name="company"/>
+
+                                        <?php echo form_error('company', ' <div class="boxinfo error">', '</div>'); ?>
+                                        <p class="description">Insert Your Company Name.</p>
+                                    </dd>
+                                </dl>
+
+                                 <dl class="form-text">
+                                    <dt>
+                                        <label for="email">Email:</label>
+                                    </dt>
+                                    <dd>
+                                        <input id="email" type="text"
+                                               value="" name="email"/>
+
+                                        <?php echo form_error('email', ' <div class="boxinfo error">', '</div>'); ?>
+                                        <p class="description">Insert Your Email.</p>
+                                    </dd>
+                                </dl>
+
+                                 <dl class="form-text">
+                                    <dt>
+                                        <label for="last_name">Phone:</label>
+                                    </dt>
+                                    <dd>
+                                        <input style="size='12';" id="last_name" type="text"
+                                               value="" name="phone"/> -   <input id="last_name" type="text"
+                                               value="" name="phone" size="10"/>
+
+                                        <?php echo form_error('phone', ' <div class="boxinfo error">', '</div>'); ?>
+                                        <p class="description">Insert Your Phone Number.</p>
+                                    </dd>
+                                </dl>
+
+                                <dl class="form-text">
+                                    <dt>
+                                        <label for="password">Password:</label>
+                                    </dt>
+                                    <dd>
+                                        <input class="logintext" id="password" type="password"
+                                               value="" name="password"/>
+
+                                        <?php echo form_error('password', ' <div class="boxinfo error">', '</div>'); ?>
+                                        <p class="description">Insert Your Password.</p>
+                                    </dd>
+                                </dl>
+
+                                <dl class="form-text">
+                                    <dt>
+                                        <label for="confirm">Confirm Password:</label>
+                                    </dt>
+                                    <dd>
+                                        <input id="confirm" type="confirm"
+                                               value="" name="password_confirm"/>
+
+                                        <?php echo form_error('password_confirm', ' <div class="boxinfo error">', '</div>'); ?>
+                                        <p class="description">Confirm Your Password.</p>
+                                    </dd>
+                                </dl>
+                                
+                                <div class="clearfix"></div>
+                            </div>
                         </div>
-                        <div id="page-content">
-                            <div class="columns">
-                                <div class="column">
-                                    <div class="content">
-                                        <form method="post" action="">
-                                            <div class="blocksection">
-                                                <h2>Please enter the users information below.</h2>
+                        <p>&nbsp;</p>
 
+                        <div class="form-button">
+                            <input type="submit" value="Create User" name="submit" id="submit"/>
 
-<div class="blockcontent">
-    <h3>Required Information</h3>
-    <dl class="form-text">
-        <dt>
-            <label for="text_1">Fullname:</label>
-        </dt>
-        <dd>
-            <input type="text" id="text_1" name="text_1" value=""/>
-
-            <!--                                                           <div class="boxinfo">-->
-            <!--                                                               your info text here...-->
-            <!--                                                           </div>-->
-            <!--                                                           <div class="boxinfo success">-->
-            <!--                                                               Username is valid and not in use.-->
-            <!--                                                           </div>-->
-            <!--                                                           <div class="boxinfo error">-->
-            <!--                                                               Please complete the required field "Username".-->
-            <!--                                                           </div>-->
-            <!--                                                         -->
-            <p class="description">Ut eros arcu scelerisque sed congue sed vehicula vel justo.</p>
-        </dd>
-    </dl>
-    <dl class="form-text">
-        <dt>
-            <label for="text_2">Nick:</label>
-        </dt>
-        <dd>
-            <input type="text" id="text_2" name="text_2" value=""/>
-
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </dd>
-    </dl>
-    <dl class="form-radio">
-        <dt>
-            <label for="salutation">Salutation:</label>
-        </dt>
-        <dd>
-            <input type="radio" id="radio_1" name="radiogroup_1" value="Mr"/> <label for="radio_1">Mr</label><br/>
-            <input type="radio" id="radio_2" name="radiogroup_1" value="Ms"/> <label for="radio_2">Ms</label><br/>
-            <input type="radio" id="radio_3" name="radiogroup_1" value="Ms"/> <label for="radio_3">Ms</label>
-
-            <p class="description">Donec est urna, mattis a convallis suscipit sem Sed ultricies adipiscing lectus ut
-                iaculis.</p>
-        </dd>
-    </dl>
-    <dl class="form-select">
-        <dt>
-            <label for="select_1">Ocuupation:</label>
-        </dt>
-        <dd>
-            <select name="select_1" id="select_1">
-                <option value="Student">Student</option>
-                <option value="Lecturer">Lecturer</option>
-                <option value="Agency">Agency</option>
-                <option value="Corporate">Corporate</option>
-            </select>
-
-            <p class="description">Ut eros arcu scelerisque sed congue sed vehicula vel justo.</p>
-        </dd>
-    </dl>
-    <dl class="form-text">
-        <dt>
-            <label for="text_3">Email:</label>
-        </dt>
-        <dd>
-            <input type="text" id="text_3" name="text_3" value=""/>
-
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </dd>
-    </dl>
-    <dl class="form-text">
-        <dt>
-            <label for="text_4">Phone:</label>
-        </dt>
-        <dd>
-            <input type="text" id="text_4" name="text_4" value=""/>
-
-            <p class="description">Donec est urna, mattis a convallis suscipit sem Sed ultricies adipiscing lectus ut
-                iaculis.</p>
-        </dd>
-    </dl>
-    <h3>Additional Information</h3>
-    <dl class="form-check">
-        <dt>
-            <label for="inter">Interest:</label>
-        </dt>
-        <dd>
-            <input type="checkbox" id="check_1" name="checkbox_1" value="Knowledge"/> <label
-                for="check_1">Knowledge</label><br/>
-            <input type="checkbox" id="check_2" name="checkbox_1" value="Networks"/> <label
-                for="check_2">Networks</label><br/>
-            <input type="checkbox" id="check_3" name="checkbox_1" value="Partnership"/> <label
-                for="check_3">Partnership</label>
-
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </dd>
-    </dl>
-    <dl class="form-file">
-        <dt>
-            <label for="file_1">Picture:</label>
-        </dt>
-        <dd>
-            <input type="file" id="file_1" name="file_1" value=""/>
-
-            <p class="description">Ut eros arcu scelerisque sed congue sed vehicula vel justo.</p>
-        </dd>
-    </dl>
-    <dl class="form-textarea">
-        <dt>
-            <label for="textarea_1">Comment:</label>
-        </dt>
-        <dd>
-            <textarea rows="5" cols="10" id="textarea_1" name="textarea_1"></textarea>
-
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </dd>
-    </dl>
-    <dl class="form-code">
-        <dt>
-            <label for="captcha_1">Captcha Code:</label>
-        </dt>
-        <dd>
-            <img src="images/content/captcha.png" alt=""/>
-            <input type="text" id="captcha_1" name="captcha_1" value=""/>
-
-            <p class="description">Ut eros arcu scelerisque sed congue sed vehicula vel justo.</p>
-        </dd>
-    </dl>
-    <div class="clearfix"></div>
-</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
 </div>

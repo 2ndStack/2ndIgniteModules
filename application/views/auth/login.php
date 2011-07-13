@@ -1,6 +1,6 @@
 <div id="contentwrap">
     <div id="page-title">
-        <h1>ATM<span>Monitoring</span></h1>
+        <h1>2ndStack<span>Studio</span></h1>
 
         <div class="clearfix"></div>
     </div>

@@ -12,7 +12,7 @@
 
 <div id="contentwrap">
     <div id="page-title">
-        <h1 class="icon gear">ATM<span>Monitoring</span></h1>
+        <h1 class="icon gear">2ndStack<span>Studio</span></h1>
 
         <div class="clearfix"></div>
     </div>
