@@ -1,4 +1,7 @@
 <script type="text/javascript" src="<?php echo base_url() . 'static/'?>js/tiny_mce/tiny_mce.js"></script>
+
+
+
 <script type="text/javascript">
     tinyMCE.init({
         // General options
@@ -136,31 +139,28 @@
                                             <label for="textarea_1">Comment:</label>
                                         </dt>
                                         <dd>
-                                            <textarea rows="5" cols="10" id="textarea_1" name="textarea_1"></textarea>
+                                            <textarea style="width:200px;" rows="5" cols="10" id="textarea_1"
+                                                      name="textarea_1"></textarea>
 
-                                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit.</p>
+
                                         </dd>
                                     </dl>
 
 
-                                    <div class="form-button">
-                                        <input type="submit" value="Submit" name="submit_1" id="submit_1"/>
-                                        <input class="grey" type="Reset" value="Reset Fields" name="reset_1"
-                                               id="reset_1"/>
-                                    </div>
                             </div>
-                    </form>
+                            </div>
 
-                    <script type="text/javascript">
-                        if (document.location.protocol == 'file:') {
-                            alert("The examples might not work properly on the local file system due to security settings in your browser. Please use a real webserver.");
-                        }
-                    </script>
+                         <div class="form-button">
+                            <input type="submit" value="Log in" name="submit" id="submit"/>
+                            <input class="grey" type="reset" value="Reset" name="reset" id="reset"/>
+                        </div>
+                    </form>
                 </div>
             </div>
+            <div class="clearfix"></div>
         </div>
     </div>
+</div>
 
 
 

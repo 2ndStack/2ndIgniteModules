@@ -63,7 +63,7 @@
                                 <div class="clearfix"></div>
                             </div>
                         </div>
-                        <p>&nbsp;</p>
+
 
                         <div class="form-button">
                             <input type="submit" value="Log in" name="submit" id="submit"/>
