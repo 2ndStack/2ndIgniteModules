@@ -1,14 +1,62 @@
-<h1>Forgot Password</h1>
-<p>Please enter your email address so we can send you an email to reset your password.</p>
+<!--<h1>Forgot Password</h1>-->
+<!--<p>Please enter your email address so we can send you an email to reset your password.</p>-->
+<!---->
+<!--<div id="infoMessage">--><?php //echo $message;?><!--</div>-->
+<!---->
+<?php //echo form_open("auth/forgot_password");?>
+<!---->
+<!--      <p>Email Address:<br />-->
+<!--      --><?php //echo form_input($email);?>
+<!--      </p>-->
+<!---->
+<!--      <p>--><?php //echo form_submit('submit', 'Submit');?><!--</p>-->
+<!---->
+<?php //echo form_close();?>
 
-<div id="infoMessage"><?php echo $message;?></div>
+<div id="contentwrap">
+    <div id="page-title">
+        <h1>2ndStack<span>Studio</span></h1>
 
-<?php echo form_open("auth/forgot_password");?>
+        <div class="clearfix"></div>
+    </div>
+    <div id="page-content">
+        <div class="columns">
+            <div class="column">
+                <div class="content">
+                    <form action="<?php echo site_url('auth/login');?>" method="post">
+                        <div class="blocksection">
+                            <h2>Forgot Password</h2>
 
-      <p>Email Address:<br />
-      <?php echo form_input($email);?>
-      </p>
+                            <div class="blockcontent">
+                                <h3>Please enter your email address so we can send you an email to reset your password.</h3>
+                                <dl class="form-text">
+                                    <dt>
+                                        <label for="email">E-mail:</label>
+                                    </dt>
+                                    <dd>
+                                        <input class="logintext" id="email" type="text"
+                                               value=""
+                                               name="email"/>
 
-      <p><?php echo form_submit('submit', 'Submit');?></p>
+                                        <?php echo form_error('email', ' <div class="boxinfo error">', '</div>'); ?>
 
-<?php echo form_close();?>
+                                        <p class="description">Insert Your Email.</p>
+                                    </dd>
+                                </dl>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <p>&nbsp;</p>
+
+                        <div class="form-button">
+                            <input type="submit" value="Submit" name="submit" id="submit"/>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

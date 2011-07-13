@@ -149,6 +149,12 @@ class Auth extends Controller
 
             //render
             $this->load->view('auth/change_password', $this->data);
+            $this->template->set_theme('omenk');
+            $this->template->set_layout('default')
+                    ->set_partial('mainnav', 'menu/mainnav')
+            //->set_partial('secnav', 'menu/secnav', $this->data)
+                    ->title('List Users', '2ndStack Studio')
+                    ->build('auth/change_password', $this->data);
         }
         else
         {
@@ -180,6 +186,12 @@ class Auth extends Controller
             //set any errors and display the form
             $this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
             $this->load->view('auth/forgot_password', $this->data);
+            $this->template->set_theme('omenk');
+            $this->template->set_layout('default')
+                    ->set_partial('mainnav', 'menu/mainnav')
+            //->set_partial('secnav', 'menu/secnav', $this->data)
+                    ->title('List Users', '2ndStack Studio')
+                    ->build('auth/forgot_password', $this->data);
         }
         else
         {
@@ -251,6 +263,12 @@ class Auth extends Controller
             $this->data['csrf'] = $this->_get_csrf_nonce();
             $this->data['user'] = $this->ion_auth->get_user_array($id);
             $this->load->view('auth/deactivate_user', $this->data);
+            $this->template->set_theme('omenk');
+            $this->template->set_layout('default')
+                    ->set_partial('mainnav', 'menu/mainnav')
+            //->set_partial('secnav', 'menu/secnav', $this->data)
+                    ->title('List Users', '2ndStack Studio')
+                    ->build('auth/deactivate_user', $this->data);
         }
         else
         {

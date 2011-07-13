@@ -97,8 +97,7 @@
                                 </dl>
 
 
-
-                                 <dl class="form-text">
+                                <dl class="form-text">
                                     <dt>
                                         <label for="company">Company Name:</label>
                                     </dt>
@@ -111,7 +110,7 @@
                                     </dd>
                                 </dl>
 
-                                 <dl class="form-text">
+                                <dl class="form-text">
                                     <dt>
                                         <label for="email">Email:</label>
                                     </dt>
@@ -124,16 +123,20 @@
                                     </dd>
                                 </dl>
 
-                                 <dl class="form-text">
+                                <dl class="form-text">
                                     <dt>
                                         <label for="last_name">Phone:</label>
                                     </dt>
                                     <dd>
                                         <input style="size='12';" id="last_name" type="text"
-                                               value="" name="phone"/> -   <input id="last_name" type="text"
-                                               value="" name="phone" size="10"/>
+                                               value="" name="phone1"/> - <input id="last_name" type="text"
+                                                                                 value="" name="phone2" size="10"/>
+                                        <input id="last_name" type="text"
+                                               value="" name="phone3" size="10"/>
 
-                                        <?php echo form_error('phone', ' <div class="boxinfo error">', '</div>'); ?>
+                                        <?php echo form_error('phone1', ' <div class="boxinfo error">', '</div>'); ?>
+                                        <?php echo form_error('phone2', ' <div class="boxinfo error">', '</div>'); ?>
+                                        <?php echo form_error('phone3', ' <div class="boxinfo error">', '</div>'); ?>
                                         <p class="description">Insert Your Phone Number.</p>
                                     </dd>
                                 </dl>
@@ -156,14 +159,14 @@
                                         <label for="confirm">Confirm Password:</label>
                                     </dt>
                                     <dd>
-                                        <input id="confirm" type="confirm"
+                                        <input id="confirm" type="password"
                                                value="" name="password_confirm"/>
 
                                         <?php echo form_error('password_confirm', ' <div class="boxinfo error">', '</div>'); ?>
                                         <p class="description">Confirm Your Password.</p>
                                     </dd>
                                 </dl>
-                                
+
                                 <div class="clearfix"></div>
                             </div>
                         </div>
