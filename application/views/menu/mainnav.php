@@ -12,9 +12,9 @@
         </li>
        
         <li>
-            <a href="#" class="parent">Detail ATM</a>
+            <a href="#" class="parent">Dashboard</a>
             <ul>
-                <li><a href="<?php echo base_url()?>index.php/detailatm">JOsss</a></li>
+                <li><a href="<?php echo base_url()?>index.php/article">Create Article</a></li>
                 <li><a href="<?php echo base_url()?>index.php/detailatm/capturedCards">Mantap</a></li>
                 <li><a href="<?php echo base_url()?>index.php/detailatm/transaksiHistory">Ra umum</a>
                 </li>
