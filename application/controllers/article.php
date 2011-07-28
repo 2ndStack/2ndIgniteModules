@@ -6,11 +6,14 @@ class Article extends CI_Controller
     function __construct()
     {
         parent::__construct();
+        $this->load->model('article_model');
         $this->load->model('ion_auth_model');
         $this->load->library('ion_auth');
         $this->load->library('session');
+        $this->load->helper('url');
+        $this->load->helper('form');
         $this->load->library('template');
-         $this->load->helper('url');
+
     }
 
     public function index()
@@ -26,5 +29,50 @@ class Article extends CI_Controller
                 ->title('Home', 'halaman utama')
                 ->build('article/index');
     }
+
+    function show()
+    {
+        $data['querys'] = $this->article_model->getAll();
+        $this->load->view('article/show', $data);
+
+    }
+
+    public function save()
+    {
+        $this->article_model->save();
+        echo'sukses';
+    }
+
+    public function update()
+    {
+        $this->article_model->update();
+        redirect('article/show');
+    }
+
+
+    function delete($id)
+    {
+        $this->db->delete('articles', array('id' => $id));
+        redirect('article/show');
+    }
+
+    //untuk edit data
+    function edit()
+    {
+        $id = $this->uri->segment(3);
+        $data['result'] = $this->article_model->getArticle($id);
+
+        if (empty($id) or count($data['result']) == 0) {
+            redirect('articles/index');
+        } else {
+            $result = $this->article_model->getArticle($id);
+            $data['id'] = $result['id'];
+            $data['title'] = $result['title'];
+            $data['category'] = $result['category'];
+            $data['contents'] = $result['contents'];
+            $this->load->view('article/edit', $data);
+        }
+    }
+
 }
 
