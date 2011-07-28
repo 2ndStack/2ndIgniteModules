@@ -18,16 +18,39 @@ class Article extends CI_Controller
 
     public function index()
     {
-
-        $data = array();
+         if (!$this->ion_auth->logged_in()) {
+            //redirect them to the login page
+            redirect('auth/login', 'refresh');
+        }
+        elseif (!$this->ion_auth->is_admin())
+        {
+            //redirect them to the home page because they must be an administrator to view this
+            redirect($this->config->item('base_url'), 'refresh');
+        }
+        else
+        {
+             $data = array();
         $data['auth'] = $this->ion_auth;
         $this->template->set_theme('omenk');
         $this->template->set_layout('default')
                 ->set_partial('mainnav', 'menu/mainnav')
                 ->set_partial('secnav', 'menu/secnav', $data)
-                ->set_partial('slidewrap', 'menu/slidewrap')
+               ->set_partial('slidewrap', 'menu/slidewrap')
                 ->title('Home', 'halaman utama')
                 ->build('article/index');
+
+        }
+
+
+//        $data = array();
+//        $data['auth'] = $this->ion_auth;
+//        $this->template->set_theme('omenk');
+//        $this->template->set_layout('default')
+//                ->set_partial('mainnav', 'menu/mainnav')
+//                ->set_partial('secnav', 'menu/secnav', $data)
+//                ->set_partial('slidewrap', 'menu/slidewrap')
+//                ->title('Home', 'halaman utama')
+//                ->build('article/index');
     }
 
     function show()
